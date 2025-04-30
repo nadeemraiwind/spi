@@ -1,0 +1,135 @@
+📘 SpiStore App – Complete Project Documentation
+📅 Document Version: Final
+🗂️ Includes: V1 (Base), V2 (Enhanced), V3 (Planned/Future)
+🔧 Core Technologies
+Frontend: HTML, CSS, JavaScript (vanilla)
+
+Backend: PHP (for final build)
+
+Database: MySQL / MariaDB
+
+Hosting: Local or Linux server (Debian preferred), Apache2
+
+Containerization: Docker (for dev deployment)
+
+No external APIs used unless explicitly approved
+
+✅ Version 1 (V1) – Core System
+🎯 Purpose:
+Basic inventory and store management system for finished goods.
+
+📁 Key Tables:
+Items: ID, Name, Description, Price, Stock, Category, DateAdded
+
+Item Type, Item Location, Unit, Person
+
+Inward, Outward: Movement tracking with quantity, person, date
+
+Store Info: Rack, Cabinet, Bucket (categorized locations)
+
+🧑‍🤝‍🧑 User Roles:
+Admin
+
+User
+
+🧰 Features:
+Add/Edit/Delete Items
+
+Inward & Outward Stock Movement
+
+Search and View Records
+
+Categorized Locations (Store → Rack → Cabinet → Bucket)
+
+Simple role control (admin vs user)
+
+Basic dashboard and static reports
+
+✅ Version 2 (V2) – Enhanced System
+🎯 Purpose:
+Add real utility, conversions, categorization, and system logic improvements.
+
+🆕 Enhancements:
+Unit Conversion System
+
+kg ↔ gram, liter ↔ gallon, mm ↔ inch, etc.
+
+Storage Hierarchy: Multi-level physical location mapping
+
+Store → Rack → Cabinet → Bucket
+
+Data Categorization: Proper classification of stored goods
+
+Improved UI: Cleaner layout, sortable/filterable tables
+
+Error handling and validation
+
+Backup module (local export in CSV)
+
+Final UI fixes and finishing work before releasing V2
+
+🧪 Version 3 (V3) – Modular & Scalable System (Planned)
+🎯 Purpose:
+Make SpiStore feature-rich, modular, and future-ready.
+
+🔄 Module System (Newly Confirmed Feature)
+Two Module Types:
+
+🟦 Core System Modules (non-deletable)
+
+🟩 Add-on Modules (can be installed/uninstalled)
+
+Lifecycle:
+
+Install → Configure → Update → Rollback → Disable → Delete
+
+Structure:
+
+Base version required for all core modules
+
+Add-ons managed from Admin Panel
+
+📦 V3 Planned Modules/Features
+❗Only features following the PHP + HTML + CSS + JS + DB rule are included.
+
+✅ Approved:
+📱 API Access or Mobile App (Self-hosted REST API)
+
+📊 Custom Dashboards (per user role)
+
+🧹 Auto Cleanup/Archiving
+
+🔎 Smart Search with Filters
+
+🔐 Role Permissions (Read/Write/Delete Logs)
+
+🎨 Theme/Style Switcher (Accessibility options)
+
+🔗 Real-time Collaboration (via WebSocket, no 3rd-party)
+
+🔧 Module System with Install/Configure/Update/Rollback
+
+🚫 Excluded (For Now – Conflict with guidelines):
+
+Feature	Conflict Reason
+AI/ML Integration	Needs 3rd-party APIs or ML models
+Voice Commands/Search	Requires speech recognition APIs
+Blockchain/NFT	Needs blockchain platform
+PWA (Full)	Includes features like service workers
+Social Login	Depends on external OAuth (Google, Facebook)
+Live Chat, Subscription Billing	Requires 3rd-party integrations
+📈 Future Ideas (For Discussion)
+Activity Logs / Audit Trails
+
+System Monitoring Tools
+
+Sample/Test Systems via Module Builder
+
+Data Import/Export System
+
+Advanced RBAC (permissions per module per action)
+
+GitHub-based Code Updates
+
+Mobile-first layout revamp
+
